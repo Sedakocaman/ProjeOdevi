@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Fibonacci</title>
+</head>
+<body>    
+ 
+    <script>
+        let fib = prompt("Kaçıncı fibonacci sayısını öğrenmek istiyorsunuz?");
+        let num1 = 0;
+        let num2 = 1;
+        let sonuc;
+        let fibNum= [];
+ 
+        for(let i = 0; i < fib; i++){
+            sonuc = num1 + num2;
+            num1 =num2;
+            num2= sonuc;
+            fibNum.push(sonuc);
+        }        
+ 
+       
+        console.log("Fibonacci (" + fib + ") : " + sonuc);
+        console.log(`Fibonacci (${fib}) :  ${sonuc}`);
+        
+        console.log("Fibonacci Sayıları : " + fibNum);
+	alert("Sonuç:" + sonuc);
+    </script>
+</body>
+</html>
